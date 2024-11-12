@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="search">
+        <input type="text" id="search_input" placeholder="Search for products">
+        <button id="search_btn">Search</button>
+    </div>
+    <select id="sort-order">
+        <option value="default">Default</option>
+        <option value="price-asc">Price asc</option>
+        <option value="price-desc">Price desc</option>
+    </select>
+    <div id="category-container" class="category__container">
+        <div class="category__item" id="all">
+            <h5>All</h5>
+        </div>
+    </div>
+    <div id="product-container" class="product__container">
+    </div>
+    <div class="product__limit">
+        <div id="pagination-container" class="pagination__container"></div>
+    </div>
+
+    <script type="module" src="js/index.js"></script>
+</body>
+
+</html>

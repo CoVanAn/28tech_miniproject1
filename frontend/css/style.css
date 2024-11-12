@@ -1,0 +1,116 @@
+@charset "UTF-8";
+.search {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+.search input {
+  padding: 10px;
+  border: 1px solid #080808;
+  border-radius: 5px;
+  width: 300px;
+}
+.search button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #c50404;
+  color: #fdfbfb;
+  cursor: pointer;
+}
+
+.category__container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.category__item {
+  width: 120px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #080808;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.category__item h5 {
+  text-align: center;
+}
+.category__item:hover {
+  background-color: #4e4c4c;
+}
+.category__item:hover h5 {
+  color: #fdfbfb;
+}
+
+.product__container {
+  margin: 20px 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.product__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px 10px;
+  border: 1px solid #fdfbfb;
+  border-radius: 5px;
+  width: 200px;
+  height: 300px;
+  transition: all 0.3s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.product__item h4 {
+  text-align: center; /* Căn giữa theo chiều ngang */
+  white-space: normal; /* Cho phép xuống dòng khi cần thiết */
+  overflow-wrap: break-word; /* Tự động ngắt dòng nếu từ quá dài */
+  word-break: break-word; /* Hỗ trợ ngắt từ cho đoạn chữ dài */
+  width: 100%; /* Đảm bảo h3 chiếm toàn bộ chiều rộng để căn giữa chính xác */
+}
+.product__item img {
+  height: 200px;
+  width: auto;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.product__limit {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+.product__limit button {
+  width: 80px;
+  margin: 0 5px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #c50404;
+  color: #fdfbfb;
+  font-weight: bold;
+  cursor: pointer;
+}
+.product__limit button:hover {
+  background-color: #940101;
+}
+.product__limit .disabled {
+  background-color: #b3b3b3;
+  cursor: not-allowed;
+}
+.product__limit .disabled:hover {
+  background-color: #b3b3b3;
+}
+
+/*# sourceMappingURL=style.css.map */
